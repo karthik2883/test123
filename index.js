@@ -43,10 +43,10 @@ function UpdateIndb() {
         console.log("Something wrong when updating data!");
       }
       if (doc == null) {
-        newCoin.name = "BTC";
-        newCoin.coin = coins.get("BTC").price_usd;
+        newMarketRate.name = "BTC";
+        newMarketRate.coin = coins.get("BTC").price_usd;
         // save the user
-        newCoin.save(function (err) {
+        newMarketRate.save(function (err) {
           if (err) {
             console.log('Error in Saving coin: ' + err);
           }
