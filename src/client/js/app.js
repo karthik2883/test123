@@ -11,12 +11,12 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
-particlesJS('particles-js',
+particlesJS('headPartical',
   
   {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 22,
         "density": {
           "enable": true,
           "value_area": 800
@@ -32,7 +32,7 @@ particlesJS('particles-js',
           "color": "#000000"
         },
         "polygon": {
-          "nb_sides": 5
+          "nb_sides": 15
         },
         "image": {
           "src": "img/github.svg",

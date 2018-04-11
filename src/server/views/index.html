@@ -9,10 +9,10 @@
     <title>Entity</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet"
       type="text/css">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
@@ -21,15 +21,21 @@
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="./css/style.css">
   </head>
+  
   <body id="page-top">
     <!-- Navigation -->
+    <li class="logo left rounded">
+        <a href="" class="logo">
+            <img src="./img/logo.png" class="img-responsive">
+        </a>
+    </li>
     <a class="menu-toggle rounded" href="#">
       <i class="fa fa-bars"></i>
     </a>
-    <nav id="sidebar-wrapper" id="particles-js">
+    <nav id="sidebar-wrapper" >
       <ul class="sidebar-nav">
         <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+          <a class="js-scroll-trigger" href="#page-top">Entity</a>
         </li>
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#page-top">Home</a>
@@ -48,18 +54,28 @@
         </li>
       </ul>
     </nav>
-
+    <div id="headPartical"></div>
     <!-- Header -->
-    <header class="masthead d-flex">
-     
-        <div class="container text-center my-auto" id="particles-js">
+    <header class="masthead d-flex" >
+        <div class="container-fluid top-alignment">
+              <div class="row">
+              <div class="col-sm-4 text-uppercase text-left"><h2>Pay anywhere, Any cryptocurrency, </h2>
+                <h2>  Any payment card 
+                     Meet Entity. The Platform and the Payment Token
+                     Regain ownership of your funds!
+                </h2>  
+               </div>
+              <div class="dividing-line col-sm-2 text-center"> <span></span></div>
+              <div class="col-sm-4 text-uppercase text-left"><h2>Token Sale</h2>
+                <h2>
+                  Token Pre-Sale ends in: 
+                   Token Pre-Sale ends in: 
+                   Token Pre-Sale ends in:
+                </h2></div>
+            </div>
+          </div>
          
-          <h1 class="mb-1">Stylish Portfolio</h1>
-          <h3 class="mb-5">
-            <em id="textTypeWriting">A Free Bootstrap Theme by Start Bootstrap</em>
-          </h3>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-        </div>
+            
       
         <div class="overlay"></div>
      
@@ -248,7 +264,7 @@
         <p class="text-muted small mb-0">Copyright &copy; Your Website 2017</p>
       </div>
     </footer>
-
+ 
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
       <i class="fa fa-angle-up"></i>
@@ -266,60 +282,8 @@
     <!-- scripts -->
     <script src="../particles.js"></script>
     <script src="./js/app.js"></script>
-  <script>
-    (function ( $ ) {
-    $.fn.typewrite = function ( options ) {
-        var settings = {
-            'selector': this,
-            'extra_char': '',
-            'delay':    100,
-            'trim':     false,
-            'callback': null
-        };
-        if (options) $.extend(settings, options);
-
-        /* This extra closure makes it so each element
-         * matched by the selector runs sequentially, instead
-         * of all at the same time. */
-        function type_next_element(index) {
-            var current_element = $(settings.selector[index]);
-            var final_text = current_element.text();
-            if (settings.trim) final_text = $.trim(final_text);
-            current_element.html("").show();
-
-            function type_next_character(element, i) {
-                element.html( final_text.substr(0, i)+settings.extra_char );
-                if (final_text.length >= i) {
-                    setTimeout(function() {
-                        type_next_character(element, i+1);
-                    }, settings.delay);
-                }
-                else {
-                    if (++index < settings.selector.length) {
-                        type_next_element(index);
-                    }
-                    else if (settings.callback) settings.callback();
-                }
-            }
-            type_next_character(current_element, 0);
-        }
-        type_next_element(0);
-
-        return this;
-    };
-})(jQuery);
-    </script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $('#textTypeWriting').typewrite({
-            'callback': function(){
-                $('#textTypeWriting').css('background-color','red');
-            },
-            'delay': 100
-        });
-    });
-    </script>
-
+   
   </body>
+  
 
 </html>
