@@ -1,5 +1,5 @@
 {
     "mongodb": {
-    "address": "localhost:27017"
+        "address": "localhost:27017"
     }
-    }
+}
