@@ -395,7 +395,6 @@ body {
   .timeline::after {
     left: 31px;
   }
-
   /* Full-width containers */
   .containerTime {
     width: 100%;
